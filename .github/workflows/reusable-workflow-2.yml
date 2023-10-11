@@ -1,0 +1,12 @@
+name: Reusable Workflow 2
+on:
+  workflow_call
+jobs:
+  ru2-job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Write something to log
+        run: |
+          echo " I am reusable workflow two - current master branch "
+    
